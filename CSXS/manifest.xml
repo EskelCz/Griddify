@@ -34,12 +34,12 @@
 					<Menu>Griddify</Menu>
 					<Geometry>
 						<Size>
-							<Height>128</Height>
+							<Height>170</Height>
 							<Width>247</Width>
 						</Size>
 
 						<MinSize>
-							<Height>128</Height>
+							<Height>170</Height>
 							<Width>247</Width>
 						</MinSize>
 					</Geometry>

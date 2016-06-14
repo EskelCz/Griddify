@@ -19,10 +19,12 @@ module.exports = paste = ->
 	Ver = ar1[2].toString().split(',')
 
 	for H in Hor
-		activeDocument.guides.add Direction.HORIZONTAL, new UnitValue(Number(H), 'px')
+		if H
+			activeDocument.guides.add Direction.HORIZONTAL, new UnitValue(Number(H), 'px')
 
 	for V in Ver
-		activeDocument.guides.add Direction.VERTICAL, new UnitValue(Number(V), 'px')
+		if V
+			activeDocument.guides.add Direction.VERTICAL, new UnitValue(Number(V), 'px')
 
 _.panel 'paste', ->
 	paste()
